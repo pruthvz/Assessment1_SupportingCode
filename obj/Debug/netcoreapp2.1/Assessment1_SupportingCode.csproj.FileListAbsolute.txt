@@ -1,0 +1,11 @@
+D:\bCodeWIP\Assignment\Assessment1_SupportingCode\bin\Debug\netcoreapp2.1\Assessment1_SupportingCode.deps.json
+D:\bCodeWIP\Assignment\Assessment1_SupportingCode\bin\Debug\netcoreapp2.1\Assessment1_SupportingCode.runtimeconfig.json
+D:\bCodeWIP\Assignment\Assessment1_SupportingCode\bin\Debug\netcoreapp2.1\Assessment1_SupportingCode.runtimeconfig.dev.json
+D:\bCodeWIP\Assignment\Assessment1_SupportingCode\bin\Debug\netcoreapp2.1\Assessment1_SupportingCode.dll
+D:\bCodeWIP\Assignment\Assessment1_SupportingCode\bin\Debug\netcoreapp2.1\Assessment1_SupportingCode.pdb
+D:\bCodeWIP\Assignment\Assessment1_SupportingCode\obj\Debug\netcoreapp2.1\Assessment1_SupportingCode.csprojAssemblyReference.cache
+D:\bCodeWIP\Assignment\Assessment1_SupportingCode\obj\Debug\netcoreapp2.1\Assessment1_SupportingCode.csproj.CoreCompileInputs.cache
+D:\bCodeWIP\Assignment\Assessment1_SupportingCode\obj\Debug\netcoreapp2.1\Assessment1_SupportingCode.AssemblyInfoInputs.cache
+D:\bCodeWIP\Assignment\Assessment1_SupportingCode\obj\Debug\netcoreapp2.1\Assessment1_SupportingCode.AssemblyInfo.cs
+D:\bCodeWIP\Assignment\Assessment1_SupportingCode\obj\Debug\netcoreapp2.1\Assessment1_SupportingCode.dll
+D:\bCodeWIP\Assignment\Assessment1_SupportingCode\obj\Debug\netcoreapp2.1\Assessment1_SupportingCode.pdb
