@@ -9,7 +9,7 @@ namespace Assessment1_SupportingCode
 {
     public class Sorting
     {
-   public void BubbleSort(int[] arr)
+       public void BubbleSort(int[] arr)
        {
               int temp;
               for (int i = 0; i < arr.Length - 1; i++)
@@ -26,7 +26,7 @@ namespace Assessment1_SupportingCode
               }
        }
 
-          public void DecendingBubbleSort(int[] arr)
+       public void DecendingBubbleSort(int[] arr)
        {
               int temp;
               for (int i = 0; i < arr.Length - 1; i++)
