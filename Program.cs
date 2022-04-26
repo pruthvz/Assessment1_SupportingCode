@@ -29,6 +29,7 @@ namespace Assessment1_SupportingCode
             Sorting sortingObject = new Sorting();
             Output outputObject = new Output();
             Input inputObject = new Input();
+            Searching searchObject = new Searching();
 
             share1Arr = readObject.readArray(Share1_fileName);
             Console.WriteLine("\n");
@@ -36,62 +37,59 @@ namespace Assessment1_SupportingCode
             Console.WriteLine("\n");
             share3Arr = readObject.readArray(Share3_fileName);
 
+            // ascending arrays
             int[] sortShare1 = share1Arr;
             int[] sortShare2 = share2Arr;
             int[] sortShare3 = share3Arr;
+
+            // decending arrays
+            int[] reverseSortedShare1 = share1Arr;
+            int[] reverseSortedShare2 = share2Arr;
+            int[] reverseSortedShare3 = share3Arr;
             
 
             // ascending/descending values
             Console.WriteLine("Shares 1");
             outputObject.FindEvery10thValueAscending(sortShare1); 
-            outputObject.FindEvery10thValueDescending(sortShare1); 
+            outputObject.FindEvery10thValueDescending(reverseSortedShare1); 
 
 
             // ascending/descending values Share_2_256.txt
             Console.WriteLine("Shares 2");
             outputObject.FindEvery10thValueAscending(sortShare2); 
-            outputObject.FindEvery10thValueDescending(sortShare2); 
+            outputObject.FindEvery10thValueDescending(reverseSortedShare2); 
 
             // ascending/descending values Share_3_256.txt
             Console.WriteLine("Shares 3");
             outputObject.FindEvery10thValueAscending(sortShare3); 
-            outputObject.FindEvery10thValueDescending(sortShare3); 
+            outputObject.FindEvery10thValueDescending(reverseSortedShare3); 
 
-            // var eleD = sortShare1.Distinct().ToArray(); 
-        
-            // foreach (var item1 in eleD) 
-            // { 
-            // 	int count = 0; 
-            // 	int index = 0; 
-            // 	foreach (var item in sortShare1) 
-            // 	{ 
-            // 		if (item1 == item) 
-            // 		{ 
-            // 			count += 1; 
-            // 			if (count > 1) 
-            // 				Console.WriteLine($"Index pos of repeated element {item1} at index " + index); 
-            // 		} 
-            // 		index += 1; 
-            // 	} 
-            // } 
-
-            // searching
+            // search value from user input;
+            int selection;
             int searchValue;
-            searchValue = inputObject.SearchValuesFromArray();
-            Console.WriteLine(searchValue);
-
-            // finding search value index in the sorted array. ascending list.
-            int index = sortShare1.findIndex(searchValue);
-            if (index != -1)
+            selection = inputObject.SelectArray();
+            if(selection == 0)
             {
-                Console.WriteLine(String.Format("Element {0} is found at index {1}", searchValue, index));
-            }
-            else{
-                Console.WriteLine("Element not found in the given array!");
+                Console.WriteLine("Terminating...");
+            } 
+            else
+            {
+                searchValue = inputObject.SearchValuesFromArray();
+                switch (selection) 
+                {
+                case 1:
+                    outputObject.OutputFinalResults(sortShare1,searchValue);
+                    break;
+                case 2:
+                    outputObject.OutputFinalResults(sortShare2,searchValue);
+                    break;
+                case 3:
+                    outputObject.OutputFinalResults(sortShare3,searchValue);
+                    break;
+                }
             }
 
-            
-        
+ 
         }
     }
 }
