@@ -46,13 +46,11 @@ namespace Assessment1_SupportingCode
             int[] reverseSortedShare1 = share1Arr;
             int[] reverseSortedShare2 = share2Arr;
             int[] reverseSortedShare3 = share3Arr;
-            
-
+          
             // ascending/descending values
             Console.WriteLine("Shares 1");
             outputObject.FindEvery10thValueAscending(sortShare1); 
             outputObject.FindEvery10thValueDescending(reverseSortedShare1); 
-
 
             // ascending/descending values Share_2_256.txt
             Console.WriteLine("Shares 2");
@@ -78,12 +76,15 @@ namespace Assessment1_SupportingCode
                 switch (selection) 
                 {
                 case 1:
+                    sortingObject.BubbleSort(sortShare1);
                     outputObject.OutputFinalResults(sortShare1,searchValue);
                     break;
                 case 2:
+                    sortingObject.BubbleSort(sortShare2);
                     outputObject.OutputFinalResults(sortShare2,searchValue);
                     break;
                 case 3:
+                    sortingObject.BubbleSort(sortShare3);
                     outputObject.OutputFinalResults(sortShare3,searchValue);
                     break;
                 }
