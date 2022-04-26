@@ -9,6 +9,7 @@ namespace Assessment1_SupportingCode
 {
     public class Output
     {
+        // when an array is passed to this function it will sort the array and it will print every 10th value from the array.
         public void FindEvery10thValueAscending(int[] arr)
         {
             Sorting sortingObject = new Sorting();
@@ -20,11 +21,24 @@ namespace Assessment1_SupportingCode
             Console.WriteLine("\n");
         }
 
+        // it will print every 10th value but in decending order..
         public void FindEvery10thValueDescending(int[] arr)
         {
             Sorting sortingObject = new Sorting();
             sortingObject.DecendingBubbleSort(arr);
             for (int i = 0; i < arr.Length; i += 10)
+            {
+                Console.Write(arr[i] + " ");
+            }
+            Console.WriteLine("\n");
+        }
+
+        // similar to the 10th value. I have copied and pasted the function but made it so it displays every 50th value.
+        public void FindEvery50thValueAscending(int[] arr)
+        {
+            Sorting sortingObject = new Sorting();
+            sortingObject.Insertionsort(arr);
+            for (int i = 0; i < arr.Length; i +=50)
             {
                 Console.Write(arr[i] + " ");
             }
